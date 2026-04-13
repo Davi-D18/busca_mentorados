@@ -44,22 +44,10 @@ ENVIRONMENT=development
 
 > Este arquivo não é versionado por segurança. Precisa ser criado manualmente.
 
-### 5. Inicialize o banco de dados
+### 5. Execute o programa
 
 ```bash
-python run.py
-```
-
-Saída esperada:
-```
-Iniciando a criação do banco de dados...
- Banco de dados criado com sucesso!
-```
-
-### 6. Execute o sistema
-
-```bash
-python menu.py
+python main.py
 ```
 
 Saída esperada:
