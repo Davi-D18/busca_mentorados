@@ -55,9 +55,12 @@ Saída esperada:
 =============================================
 SISTEMA DE MENTORIA
 =============================================
-1. Buscar mentoreado
-2. Ver relatório geral
-3. Sair
+1. Buscar mentorado e encontros inscritos
+2. Verificar vaga em um encontro
+3. Inscrever alguém novo
+4. Confirmar presença em um encontro
+5. Inscrever-se em um encontro
+6. Sair
 Escolha uma opção:
 ```
 
@@ -70,6 +73,7 @@ Escolha uma opção:
 | `ModuleNotFoundError: No module named 'decouple'` | Dependência não instalada | Rodar `pip install -r requirements.txt` |
 | `KeyError: 'ENVIRONMENT'` | Arquivo `.env` não criado | Criar o arquivo `.env` conforme o passo 4 |
 | `python não encontrado` | Python não está no PATH | Reinstalar o Python marcando "Add to PATH" |
+| `ValueError: Environment 'teste' não encontrado. Informe um ambiente válido: ['Development']` | ENVIRONMENT no `.env` está errado | Use `ENVIRONMENT=Development` |
 
 ---
 

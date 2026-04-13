@@ -8,9 +8,12 @@ O sistema é operado por um menu de linha de comando com opções numeradas. O u
 =============================================
 SISTEMA DE MENTORIA
 =============================================
-1. Buscar mentoreado
-2. Ver relatório geral
-3. Sair
+1. Buscar mentorado e encontros inscritos
+2. Verificar vaga em um encontro
+3. Inscrever alguém novo
+4. Confirmar presença em um encontro
+5. Inscrever-se em um encontro
+6. Sair
 Escolha uma opção:
 ```
 
