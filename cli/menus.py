@@ -134,6 +134,13 @@ def create_enrollment():
         sleep(1.5)
         return
 
+    total = repo.count_enrollments_by_date(date_obj)
+
+    if total >= 3:
+        print("Não há vagas disponíveis para esse encontro.")
+        pause()
+        return
+
     repo.create_enrollment(mentoreado["id"], date_obj)
 
     print(
