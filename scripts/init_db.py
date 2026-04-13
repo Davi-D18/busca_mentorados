@@ -6,12 +6,12 @@ class DBInitializer:
         self.conn = get_db_connection()
         self.cursor = self.conn.cursor()
 
-    def close(self):
+    def _close(self):
         if self.conn:
             self.conn.commit()
             self.conn.close()
 
-    def create_tables(self):
+    def _create_tables(self):
         self.cursor.execute('''
         CREATE TABLE IF NOT EXISTS mentoreados (
             id INTEGER PRIMARY KEY,
@@ -28,7 +28,7 @@ class DBInitializer:
             FOREIGN KEY (mentoreado_id) REFERENCES mentoreados(id)
         )''')
 
-    def insert_mentoreados(self):
+    def _insert_mentoreados(self):
         self.cursor.executemany('INSERT OR IGNORE INTO mentoreados VALUES (?,?,?)', [
             (1, 'Gertrudes Silva', 'gertrudes@email.com'),
             (2, 'José Costa', 'jose@email.com'),
@@ -37,7 +37,7 @@ class DBInitializer:
             (5, 'Maria Martins', 'maria@email.com'),
         ])
 
-    def insert_encontros(self):
+    def _insert_encontros(self):
         self.cursor.executemany('INSERT OR IGNORE INTO encontros VALUES (?,?,?,?)', [
             (1, 1, '2026-04-01', 1),
             (2, 1, '2026-04-08', 1),
@@ -47,8 +47,8 @@ class DBInitializer:
         ])
 
     def run(self):
-        self.create_tables()
-        self.insert_mentoreados()
-        self.insert_encontros()
-        self.close()
+        self._create_tables()
+        self._insert_mentoreados()
+        self._insert_encontros()
+        self._close()
         print("✅ Banco de dados criado com sucesso!")
