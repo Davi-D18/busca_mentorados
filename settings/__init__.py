@@ -5,7 +5,7 @@ from .development import DevelopmentSettings
 env = config("ENVIRONMENT")
 
 ENVIROMENTS = {
-    "development": DevelopmentSettings,
+    DevelopmentSettings.NAME_ENVIRONMENT: DevelopmentSettings,
 }
 
 
