@@ -104,7 +104,5 @@ O projeto segue uma separação de responsabilidades clara:
 | `configs/database.py` | Conexão com o banco |
 | `settings/` | Configurações por ambiente |
 | `scripts/init_db.py` | Criação das tabelas e seed |
-| `scripts/buscar_mentoreado.py` | Lógica de busca (Módulo D) |
-| `scripts/relatorio.py` | Geração de relatórios |
-| `menu.py` | Interface do usuário |
-| `run.py` | Ponto de entrada para inicialização |
+| `cli/menus.py` | Módulo responsável pela criação do menu e gerenciamento das opções disponíveis. |
+| `main.py` | Ponto de entrada para inicialização |

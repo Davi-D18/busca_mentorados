@@ -39,7 +39,7 @@ pip install -r requirements.txt
 Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
 
 ```
-ENVIRONMENT=development
+ENVIRONMENT=Development
 ```
 
 > Este arquivo não é versionado por segurança. Precisa ser criado manualmente.
