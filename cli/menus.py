@@ -14,7 +14,7 @@ def menu():
     print("4. Confirmar presença em um encontro")
     print("5. Inscrever-se em um encontro")
     print("6. Sair")
-    return int(input("Escolha uma opção: "))
+    return input("Escolha uma opção: ")
 
 
 def seek_mentorship():

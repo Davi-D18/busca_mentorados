@@ -28,7 +28,14 @@ def main():
 
     try:
         while True:
-            selected_option = menu()
+            try:
+                selected_option = int(menu())
+            except ValueError:
+                print("Entrada inválida. Por favor, insira um número.")
+                sleep(1.5)
+                clear_screen()
+                continue
+
             action = OPTIONS.get(selected_option)
 
             if selected_option == 6:
