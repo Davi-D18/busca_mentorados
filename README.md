@@ -21,8 +21,8 @@ Nossa missão foi criar um sistema que ajuda a Labs a gerenciar inscrições, va
 | Integrante | Responsabilidade |
 |---|---|
 | Davi | Banco de dados, configurações, menu interativo |
-| Samuel | Controle de vagas e inscrições |
-| Tulani | Buscador de mentoreado, documentação |
+| Samuel | Controle de vagas, inscrições e slide|
+| Tulani | Buscador de mentoreado, documentação (README e docs) e PDF|
 
 ---
 
